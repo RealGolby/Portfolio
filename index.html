@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vojtěch's Portfolio</title>
-    <link rel="stylesheet" href="Portfolio/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,86 +18,88 @@
         </div>
     </header>
 
-<div class="fadeInFooter">
-    <section id="about-me">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Hello, I’m Vojtěch, a passionate game developer with a focus on creating immersive and engaging
-                experiences.
-                I specialize in game development using Unreal Engine and Unity, with experience in C++, C#, and web
-                technologies.
-                Below are some of the projects I have worked on. Feel free to explore and contact me for collaboration
-                or job opportunities.
-            </p>
-        </div>
-    </section>
+    <div class="fadeInFooter">
+        <section id="about-me">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    Hello, I’m Vojtěch, a passionate game developer with a focus on creating immersive and engaging
+                    experiences.
+                    I specialize in game development using Unreal Engine and Unity, with experience in C++, C#, and web
+                    technologies.
+                    Below are some of the projects I have worked on. Feel free to explore and contact me for
+                    collaboration
+                    or job opportunities.
+                </p>
+            </div>
+        </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
 
-            <!-- Project 1 -->
-            <div class="project">
-                <div class="project-content">
-                    <button class="nav-btn prev-btn" onclick="changeMedia(this, -1, 0)">&#10094;</button>
-                    <div class="text-section">
-                        <h3>Project Title 1</h3>
-                        <p class="project-desc">A brief description of the first video.</p>
-                    </div>
-                    <div class="media-container">
-                        <iframe class="media" src="https://www.youtube.com/embed/m4bjVg1bf_g?si=_SKEnKFxGn8jHpf4"
-                            allowfullscreen></iframe>
-                        <iframe class="media" src="https://www.youtube.com/embed/videoID2" allowfullscreen
-                            style="display: none;"></iframe>
-                        <img class="media" src="Portfolio/image1.jpg" alt="Project Image" style="display: none;">
-                        <button class="nav-btn next-btn" onclick="changeMedia(this, 1, 0)">&#10095;</button>
+                <!-- Project 1 -->
+                <div class="project">
+                    <div class="project-content">
+                        <button class="nav-btn prev-btn" onclick="changeMedia(this, -1, 0)">&#10094;</button>
+                        <div class="text-section">
+                            <h3>Project Title 1</h3>
+                            <p class="project-desc">A brief description of the first video.</p>
+                        </div>
+                        <div class="media-container">
+                            <iframe class="media" src="https://www.youtube.com/embed/m4bjVg1bf_g?si=_SKEnKFxGn8jHpf4"
+                                allowfullscreen></iframe>
+                            <iframe class="media" src="https://www.youtube.com/embed/videoID2" allowfullscreen
+                                style="display: none;"></iframe>
+                            <img class="media" src="Portfolio/image1.jpg" alt="Project Image" style="display: none;">
+                            <button class="nav-btn next-btn" onclick="changeMedia(this, 1, 0)">&#10095;</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 2 -->
-            <div class="project">
-                <div class="project-content">
-                    <button class="nav-btn prev-btn" onclick="changeMedia(this, -1, 1)">&#10094;</button>
-                    <div class="text-section">
-                        <h3>Project Title 2</h3>
-                        <p class="project-desc">A brief description of the second video.</p>
-                    </div>
-                    <div class="media-container">
-                        <iframe class="media" src="https://www.youtube.com/embed/m4bjVg1bf_g?si=_SKEnKFxGn8jHpf4"
-                            allowfullscreen></iframe>
-                        <iframe class="media" src="https://www.youtube.com/embed/videoID2" allowfullscreen
-                            style="display: none;"></iframe>
-                        <img class="media" src="Portfolio/image1.jpg" alt="Project Image" style="display: none;">
-                        <button class="nav-btn next-btn" onclick="changeMedia(this, 1, 1)">&#10095;</button>
+                <!-- Project 2 -->
+                <div class="project">
+                    <div class="project-content">
+                        <button class="nav-btn prev-btn" onclick="changeMedia(this, -1, 1)">&#10094;</button>
+                        <div class="text-section">
+                            <h3>Project Title 2</h3>
+                            <p class="project-desc">A brief description of the second video.</p>
+                        </div>
+                        <div class="media-container">
+                            <iframe class="media" src="https://www.youtube.com/embed/m4bjVg1bf_g?si=_SKEnKFxGn8jHpf4"
+                                allowfullscreen></iframe>
+                            <iframe class="media" src="https://www.youtube.com/embed/videoID2" allowfullscreen
+                                style="display: none;"></iframe>
+                            <img class="media" src="Portfolio/image1.jpg" alt="Project Image" style="display: none;">
+                            <button class="nav-btn next-btn" onclick="changeMedia(this, 1, 1)">&#10095;</button>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Add more projects here with unique indices -->
             </div>
+        </section>
 
-            <!-- Add more projects here with unique indices -->
-        </div>
-    </section>
+        <section id="cv">
+            <div class="container">
+                <h2>Download My CV</h2>
+                <a href="Portfolio/Vojtech_Kavan_CV.pdf" download target="_blank" class="cv-link">
+                    📄 Download CV (PDF)
+                </a>
+            </div>
+        </section>
 
-    <section id="cv">
-        <div class="container">
-            <h2>Download My CV</h2>
-            <a href="Portfolio/Vojtech_Kavan_CV.pdf" download target="_blank" class="cv-link">
-                📄 Download CV (PDF)
-            </a>
-        </div>
-    </section>
+        <footer>
+            <div class="container">
+                <p>Email: golbygames@gmail.com</p>
+                <p>Phone: (+420) 723 171 905</p>
+                <p>Discord: realgolby</p>
+                <p>Follow me on <a href="https://www.linkedin.com/in/vojt%C4%9Bch-kav%C3%A1n-13b50b2a4/"
+                        target="_blank">LinkedIn</a></p>
+            </div>
+        </footer>
+    </div>
 
-    <footer>
-        <div class="container">
-            <p>Email: golbygames@gmail.com</p>
-            <p>Phone: (+420) 723 171 905</p>
-            <p>Discord: realgolby</p>
-            <p>Follow me on <a href="https://www.linkedin.com/in/vojt%C4%9Bch-kav%C3%A1n-13b50b2a4/" target="_blank">LinkedIn</a></p>
-        </div>
-    </footer>
-</div>
-    
 </body>
 
 <script>
