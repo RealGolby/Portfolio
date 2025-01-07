@@ -11,13 +11,24 @@ html,body{
     flex-direction: column;
 }
 
-body {
+:hover{
+    cursor:default;
+}
 
+a:hover{
+    cursor: pointer;
+}
+
+body {
     background-image: url("background.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
     background-color: #ffffff;
     color: hsl(262, 100%, 94%);
     font-family: Poppins;
-    background-size:contain;
+    background-size: cover; /* Ensures the background image covers the entire page */
     width: 100%;
     height: 100%;
     text-shadow: rgba(255, 242, 170, 0.322) 1px 0 50px;
@@ -33,6 +44,7 @@ body {
     animation: fadeInFooterAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    backdrop-filter: blur(5px);
 }
 
 @keyframes fadeInTitleAnimation {
@@ -72,6 +84,21 @@ header {
     padding: 20px 0;
     text-align: center;
     backdrop-filter: blur(2px);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Adjust spacing between the image and text */
+}
+
+.profile-picture {
+    width: 200px;  /* Adjust to your desired size */
+    height: 200px;
+    border-radius: 50%;  /* Makes it a circular image */
+    object-fit: cover;  /* Ensures it doesn't stretch or distort */
+    border: 10px solid #ae84e4; /* Optional: adds a border around the image */
 }
 
 header h1 {
@@ -204,7 +231,7 @@ button:hover {
     justify-content: center;
     z-index: 10;
     transition: font-size 0.3s ease; /* Smooth arrow size transition */
-    text-shadow: rgba(255, 242, 170, 0.815) 0px 0px 25px;
+    text-shadow: rgba(241, 170, 255, 0.815) 0px 0px 25px;
 }
 
 .prev-btn {
@@ -212,7 +239,7 @@ button:hover {
 }
 
 .next-btn {
-    right: -80px; /* Adjust the right button to stay within the container */
+    right: -100px; /* Adjust the right button to stay within the container */
 }
 
 .nav-btn:hover {
@@ -244,4 +271,82 @@ button:hover {
 
 .cv-link::before {
     content: "⬇️ ";
+}
+
+.contact{
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.contactlink{
+    color: hsl(262, 100%, 94%);
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.contactlink:hover{
+    transform: translateY(-1px);
+    font-size: 1.2rem;
+}
+
+.project_fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.project_fade.show {
+    opacity: 1;
+}
+
+.media {
+    width: 500px;  /* Set a fixed width */
+    min-height: 300px;
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.media:hover{
+    cursor: pointer;
+}
+
+#fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h2{
+    text-shadow: rgba(166, 70, 255, 0.425) 5px 0 15px;
+    margin-top: 200px;
+}
+
+.aboutme{
+    font-size: 25px;
+}
+
+/* Round edges for all images */
+img, iframe {
+    border-radius: 15px; /* Adjust the value to control the roundness */
+    overflow: hidden; /* Ensures the content stays within the rounded border */
+}
+
+/* Optional: Apply border-radius specifically to the fullscreen image */
+#fullscreen-image {
+    border-radius: 15px; /* Same roundness as the other images */
 }
