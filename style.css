@@ -26,12 +26,12 @@ body {
     background-repeat: no-repeat;
 
     background-color: #ffffff;
-    color: hsl(262, 100%, 94%);
+    color: hsl(207, 100%, 56%);
     font-family: Poppins;
     background-size: cover; /* Ensures the background image covers the entire page */
     width: 100%;
     height: 100%;
-    text-shadow: rgba(255, 242, 170, 0.322) 1px 0 50px;
+    text-shadow: rgba(170, 228, 255, 0.322) 1px 0 50px;
 }
 
 .fadeInMain {
@@ -44,7 +44,7 @@ body {
     animation: fadeInFooterAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    backdrop-filter: blur(5px);
+
 }
 
 @keyframes fadeInTitleAnimation {
@@ -78,8 +78,8 @@ body {
 }
 
 header {
-    text-shadow: rgba(68, 0, 255, 0.815) 5px 0 10px;
-    background-color: #a29fd8a1;
+    text-shadow: rgba(0, 110, 255, 0.815) 5px 0 10px;
+    background-color: #65baeba1;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -95,10 +95,9 @@ header {
 
 .profile-picture {
     width: 200px;  /* Adjust to your desired size */
-    height: 200px;
-    border-radius: 50%;  /* Makes it a circular image */
+    height: 200px;  /* Makes it a circular image */
     object-fit: cover;  /* Ensures it doesn't stretch or distort */
-    border: 10px solid #ae84e4; /* Optional: adds a border around the image */
+    border: 10px solid #447bf3; /* Optional: adds a border around the image */
 }
 
 header h1 {
@@ -148,7 +147,7 @@ h2 {
 }
 
 footer {
-    background-color: #a29fd8a1;
+    background-color: #9fcbd8a1;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -231,7 +230,7 @@ button:hover {
     justify-content: center;
     z-index: 10;
     transition: font-size 0.3s ease; /* Smooth arrow size transition */
-    text-shadow: rgba(241, 170, 255, 0.815) 0px 0px 25px;
+    text-shadow: rgba(170, 238, 255, 0.815) 0px 0px 25px;
 }
 
 .prev-btn {
@@ -253,7 +252,7 @@ button:hover {
     font-size: 1rem;
     font-weight: bold;
     color: white;
-    background-color: hsl(261, 100%, 70%);
+    background-color: hsl(214, 72%, 38%);
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -261,7 +260,7 @@ button:hover {
 }
 
 .cv-link:hover {
-    background-color: hsl(261, 100%, 79%);
+    background-color: hsl(216, 100%, 79%);
     transform: translateY(-3px);
 }
 
@@ -279,7 +278,7 @@ button:hover {
 }
 
 .contactlink{
-    color: hsl(262, 100%, 94%);
+    color: hsl(188, 100%, 94%);
     display: inline-block;
     text-decoration: underline;
 }
@@ -332,7 +331,7 @@ button:hover {
     transform: translate(-50%, -50%);
 }
 h2{
-    text-shadow: rgba(166, 70, 255, 0.425) 5px 0 15px;
+    text-shadow: rgba(70, 212, 255, 0.425) 5px 0 15px;
     margin-top: 200px;
 }
 
