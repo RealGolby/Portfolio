@@ -28,7 +28,7 @@ body {
     background-color: #ffffff;
     color: hsl(207, 100%, 56%);
     font-family: Poppins;
-    background-size: cover; /* Ensures the background image covers the entire page */
+    background-size: cover;
     width: 100%;
     height: 100%;
     text-shadow: rgba(170, 228, 255, 0.322) 1px 0 50px;
@@ -78,8 +78,8 @@ body {
 }
 
 header {
-    text-shadow: rgba(0, 110, 255, 0.815) 5px 0 10px;
-    background-color: #65baeba1;
+    text-shadow: rgba(0, 110, 255, 0.815) 2px 0 5px;
+    background-color: #1a1a1aa1;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -90,14 +90,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Adjust spacing between the image and text */
+    gap: 10px;
 }
 
 .profile-picture {
-    width: 200px;  /* Adjust to your desired size */
-    height: 200px;  /* Makes it a circular image */
-    object-fit: cover;  /* Ensures it doesn't stretch or distort */
-    border: 10px solid #447bf3; /* Optional: adds a border around the image */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 header h1 {
@@ -147,7 +146,7 @@ h2 {
 }
 
 footer {
-    background-color: #9fcbd8a1;
+    background-color: #292a2ba1;
     color: white;
     text-align: center;
     padding: 20px 0;
